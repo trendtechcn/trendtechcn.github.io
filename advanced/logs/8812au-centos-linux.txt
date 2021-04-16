@@ -1,0 +1,73 @@
+DKMS make.log for rtl8812au-5.9.3.37279.20201012 for kernel 4.18.0-240.22.1.el8_3.x86_64 (x86_64)
+Tue Apr 20 00:07:42 EDT 2021
+make ARCH=x86_64 CROSS_COMPILE= -C /lib/modules/4.18.0-240.22.1.el8_3.x86_64/build M=/var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build  modules
+make[1]: Entering directory '/usr/src/kernels/4.18.0-240.22.1.el8_3.x86_64'
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_cmd.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_security.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_debug.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_io.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_ioctl_query.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_ioctl_set.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_ieee80211.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_mlme.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_mlme_ext.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_mi.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_wlan_util.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_vht.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_pwrctrl.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_rf.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_chplan.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/monitor/rtw_radiotap.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_recv.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_sta_mgt.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_ap.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/mesh/rtw_mesh.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/mesh/rtw_mesh_pathtbl.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/mesh/rtw_mesh_hwmp.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_xmit.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_p2p.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_rson.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_tdls.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_br_ext.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_iol.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_sreset.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_btcoex_wifionly.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_btcoex.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_beamforming.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_odm.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_rm.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_rm_fsm.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_rm_util.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/efuse/rtw_efuse.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/crypto/aes-internal.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/crypto/aes-internal-enc.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/crypto/aes-gcm.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/crypto/aes-ccm.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/crypto/aes-omac1.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/crypto/ccmp.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/crypto/gcmp.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/crypto/aes-siv.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/crypto/aes-ctr.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/crypto/sha256-internal.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/crypto/sha256.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/crypto/sha256-prf.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/crypto/rtw_crypto_wrap.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/core/rtw_swcrypto.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/os_dep/osdep_service.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/os_dep/linux/os_intfs.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/os_dep/linux/usb_intf.o
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/os_dep/linux/usb_ops_linux.o
+/var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/os_dep/linux/os_intfs.c:1752:22: error: initialization of ‘u16 (*)(struct net_device *, struct sk_buff *, struct net_device *, u16 (*)(struct net_device *, struct sk_buff *, struct net_device *))’ {aka ‘short unsigned int (*)(struct net_device *, struct sk_buff *, struct net_device *, short unsigned int (*)(struct net_device *, struct sk_buff *, struct net_device *))’} from incompatible pointer type ‘u16 (*)(struct net_device *, struct sk_buff *, void *, u16 (*)(struct net_device *, struct sk_buff *, struct net_device *))’ {aka ‘short unsigned int (*)(struct net_device *, struct sk_buff *, void *, short unsigned int (*)(struct net_device *, struct sk_buff *, struct net_device *))’} [-Werror=incompatible-pointer-types]
+  .ndo_select_queue = rtw_select_queue,
+                      ^~~~~~~~~~~~~~~~
+/var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/os_dep/linux/os_intfs.c:1752:22: note: (near initialization for ‘rtw_netdev_ops.ndo_select_queue’)
+  CC [M]  /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/os_dep/linux/ioctl_linux.o
+cc1: some warnings being treated as errors
+make[2]: *** [scripts/Makefile.build:315: /var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/os_dep/linux/os_intfs.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build/os_dep/linux/ioctl_linux.c:12379:30: warning: ‘rtw_get_wireless_stats’ defined but not used [-Wunused-function]
+ static struct iw_statistics *rtw_get_wireless_stats(struct net_device *dev)
+                              ^~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:1544: _module_/var/lib/dkms/rtl8812au/5.9.3.37279.20201012/build] Error 2
+make[1]: Leaving directory '/usr/src/kernels/4.18.0-240.22.1.el8_3.x86_64'
+make: *** [Makefile:2347: modules] Error 2
