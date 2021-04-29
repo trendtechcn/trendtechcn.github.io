@@ -12,11 +12,11 @@ To see your architecture, run:
 uname -m
 ```
 
-So if for example you see `mips` or `powerpc` there,  then you architecture isn't officially supported. Another reason for compilation errors is if your kernel is 64bit while your OS is 32bit, or the opposite. For example, on Rasbperry Pi OS, both [32bit (armhf)](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit) and [64bit (aarch64)](https://www.raspberrypi.org/forums/viewtopic.php?t=275370) installations are supported, but using the [64bit kernel8.img](https://github.com/RPi-Distro/repo/issues/157#issuecomment-581576549) on a 32bit installation is not.
+So if for example you see `mips` or `powerpc` there,  then your architecture isn't officially supported. Another reason for compilation errors is if your kernel is 64bit while your OS is 32bit, or the opposite. For example, on Rasbperry Pi OS, both [32bit (armhf)](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit) and [64bit (aarch64)](https://www.raspberrypi.org/forums/viewtopic.php?t=275370) installations are supported, but using the [64bit kernel8.img](https://github.com/RPi-Distro/repo/issues/157#issuecomment-581576549) on a 32bit installation is not.
 
 > 📝 **Note** that if your architecture is unsupported and you didn't notice it when you purchased our adapter, you may return the adapter back to Amazon for a refund, as it comes with a two-year warranty.
 
-Here is a list of some boards and distributions were our installer was successful:
+Here is a list of some boards and distributions where our installer was successful:
 
 | Board | Distribution | Arch | Kernel version, remarks |
 |---|---|---|---|

@@ -283,7 +283,9 @@ install_prerequisites() {
         ;;
     dnf | yum)
         # E.g. kernel-devel, kernel-lt-devel, -ml, -uek
-        var=$(rpm -qf "/lib/modules/$(uname -r)/modules.builtin" | sed 's/^\(kernel[-a-z]*\).*/\1devel/') ||
+        # Fedora returns kernel-core-version, remove -core
+        var=$(rpm -qf "/lib/modules/$(uname -r)/modules.builtin" |
+            sed 's/^\(kernel[-a-z]*\).*/\1devel/;s/-core-devel/-devel/') ||
             request_info "Unknown kernel"
         # RHEL-based distributions might not provide dkms
         if "$_PM" list dkms >/dev/null 2>&1; then
@@ -311,7 +313,8 @@ install_prerequisites() {
         ;;
     zypper)
         # E.g. kernel-devel, kernel-default-devel
-        var=$(rpm -qf "/lib/modules/$(uname -r)/modules.builtin" | sed 's/^\(kernel[-a-z]*\).*/\1devel/') ||
+        var=$(rpm -qf "/lib/modules/$(uname -r)/modules.builtin" |
+            sed 's/^\(kernel[-a-z]*\).*/\1devel/;s/-core-devel/-devel/') ||
             request_info "Unknown kernel"
         inmp "zypper install -y" bc dkms "headers:$var"
         ;;
