@@ -4,7 +4,7 @@ nav_exclude: true
 
 # Internal adapters
 
-Laptops, Raspberry Pis and even desktop computers may have internal wifi devices that can cause one or more of the following issues:
+Laptops, Raspberry Pis and even desktop computers may have internal wifi devices that can cause the following issues:
 
 1. If the internal wifi is switched off, then network-manager disables all external adapters as well, [due to a bug](https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/issues/79#note_944168). The solution is to either [switch on the internal wifi](#switch-on-internal-wifi), or to [blacklist its module (driver)](#blacklist-internal-wifi-module).
 2. Configuring multiple wifi devices can be tricky. See how to [select the correct device in network-manager](#select-device-in-network-manager), or [blacklist the internal wifi module](#blacklist-internal-wifi-module).
@@ -24,7 +24,7 @@ rfkill list
 
 If it reports "Soft blocked: yes", then you can enable wifi from the network-manager menu, or with this command: `sudo rfkill unblock 0`.
 
-If it reports "Hard blocked: yes", then you need to enable it by pressing Fn+F5 on your laptop keyboard, or whatever other F-key has a wifi icon on top of it. Some laptops also have a hardware "wifi on/off" switch ([screenshot](fn-f5.jpg)). After switching it on, run `rfkill list` again and verify that wifi it no longer blocked. If you're having difficulties with this step, please send us your laptop model and some screenshots of its keys.
+If it reports "Hard blocked: yes", then you need to enable it by pressing Fn+F5 on your laptop keyboard, or whatever other F-key has a wifi icon on top of it ([screenshot](fn-f5.jpg)). Some laptops also have a hardware "wifi on/off" switch ([screenshot](wifi-switch.jpg)). After switching it on, run `rfkill list` again and verify that wifi is no longer blocked. If you're having difficulties with this step, please send us your laptop model and some screenshots of its keys.
 
 ## Select device in network-manager
 
