@@ -2,7 +2,7 @@
 parent: Troubleshooting
 ---
 
-# OS updates
+# Half updated OS
 
 In some cases your operating system updates might not be properly installed and may cause our installer to fail. For example, if your running kernel has no matching kernel headers, you may receive an error like the following:
 

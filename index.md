@@ -6,7 +6,7 @@ nav_order: 1
 
 The following instructions install the appropriate drivers for the [AC1L](https://www.trendtechcn.com/Product.aspx?ProductId=328), [AC3L](https://www.trendtechcn.com/Product.aspx?ProductId=329) and [AC5L](https://www.trendtechcn.com/Product.aspx?ProductId=332) BrosTrend WiFi adapters in any of the [supported distributions](supported-distributions). All the drivers and the installer are open source (GPL); you may get the code from [here](troubleshooting/source-code).
 
-> 💡 **Tip:** It is highly recommended to [update and reboot your system](troubleshooting/os-updates) before running our installer, to avoid some common issues like mismatched kernel headers or old http certificates.
+> 💡 **Tip:** It is highly recommended to [update and reboot your system](troubleshooting/half-updated-os) before running our installer, to avoid some common issues like mismatched kernel headers or old http certificates.
 
 ## Installation steps
 
